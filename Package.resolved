@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit",
+      "state" : {
+        "revision" : "2842e6e84e82eb9a8dac0100ca90d9444b0307f4",
+        "version" : "5.7.1"
+      }
+    },
+    {
+      "identity" : "yandexmapsmobile",
+      "kind" : "localSourceControl",
+      "location" : "/Users/eduardsinyakov/Downloads/Premier_Files/YandexMapsMobile",
+      "state" : {
+        "revision" : "cde8d4657218d6ce86e133c974b484bc6e3960b5",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}

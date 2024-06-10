@@ -11,11 +11,16 @@ let package = Package(
             name: "Maps",
             targets: ["Maps"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/SnapKit/SnapKit", .upToNextMajor(from: "5.7.1")),
+        .package(url: "../YandexMapsMobile", .upToNextMajor(from: "1.0.0"))
+    ],
+    
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "Maps"),
+            name: "Maps", dependencies: ["SnapKit", "YandexMapsMobile"]),
         .testTarget(
             name: "MapsTests",
             dependencies: ["Maps"]),
